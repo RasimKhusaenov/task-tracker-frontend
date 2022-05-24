@@ -1,12 +1,17 @@
-import Login from "./pages/login.js";
+import Login from "./pages/Login";
+import Header from "./components/Header";
+import React from "react";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-        <Login></Login>
-        TaskTracker
+      <Header>
+        Task Tracker
+      </Header>
+      <hr />
+      <Login/>
+      <hr />
     </div>
   );
 }
 
-export default App;
